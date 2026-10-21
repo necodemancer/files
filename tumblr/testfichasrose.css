@@ -221,7 +221,7 @@
 /*--FIRMA 2: HERA--*/
 
 /*VARIABLES BASE*/
-.nchera {
+.nchera, .nchera::before, .nchera::after, .nchera *, .nchera *::before, .nchera *::after {
   --_width:var(--w, 230px);
   --_height:var(--h, 200px);
   --_padding:var(--pd, 10px);
@@ -266,10 +266,11 @@
   overflow:hidden;
   width:calc(var(--_width) + var(--_side));
   height:var(--_height);
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
   background:var(--_bckg0);
   padding:var(--_padding);
   position:relative;
+  line-height:1!important;
   & br {
     display:none;
   }
@@ -336,9 +337,10 @@
       filter:var(--_filter2);
     }
     & > em {
-      font-size:5em;
+      font-size:5em!important;
+      line-height:1!important;
       color:var(--_icon2)!important;
-      font-style:normal;
+      font-style:normal!important;
       margin-bottom:.35em;
       &[class^="cp "] {
         font-family:'cappuccicons';
@@ -346,11 +348,13 @@
     }
     & > i {
       max-width:25ch;
-      font-style:normal;
+      font-style:normal!important;
+      font-size:var(--_fontsize)!important;
+      font-family:var(--_ffmono)!important;
       text-align:justify;
       text-align-last:center;
       text-wrap:pretty;
-      line-height:1.3em;
+      line-height:1.3em!important;
       & > br {
         display:inline;
       }
@@ -388,11 +392,13 @@
       text-align:center;
     }
     & > em {
-      font-size:2.5em;
+      font-size:2.5em!important;
+      line-height:1!important;
       color:var(--_icon1)!important;
     }
     & > b {
-      font:2.5em var(--_fftitle);
+      font:2.5em var(--_fftitle)!important;
+      line-height:1!important;
       color:var(--_letter1)!important;
     }
   }
@@ -409,7 +415,7 @@
 /*--FIRMA 3: POSEIDÓN--*/
 
 /*VARIABLES BASE*/
-.ncposeidon {
+.ncposeidon, .ncposeidon::before, .ncposeidon::after, .ncposeidon *, .ncposeidon *::before, .ncposeidon *::after {
   --_width:var(--w, 320px);
   --_height:var(--h, 220px);
   --_padding:var(--pd, 15px);
@@ -458,7 +464,8 @@
   isolation:isolate;
   position:relative;
   background:var(--_bckg0);
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   & br { display:none; }
   & > u {
     &::before {
@@ -504,11 +511,12 @@
     }
     & > i, & > em {
       padding:1em;
-      font:700 var(--_fontsize) var(--_ffmono);
+      font:700 var(--_fontsize) var(--_ffmono)!important;
+      line-height:1!important;
       text-transform:uppercase;
       text-align:center;
-      letter-spacing:.1em;
-      text-indent:.1em;
+      letter-spacing:.1em!important;
+      text-indent:.1em!important;
     }
     & > span {
       border-block:var(--_border2);
@@ -672,14 +680,17 @@
     }
     & > b {
       margin-bottom:0;
-      font:italic 4em var(--_fftitle);
-      line-height:1;
+      font:italic 4em var(--_fftitle)!important;
+      line-height:1!important;
       color:var(--_title4)!important;
     }
     & > i {
       text-transform:uppercase;
-      font-weight:700;
-      font-style:normal;
+      font-weight:700!important;
+      font-style:normal!important;
+      font-size:var(--_fontsize)!important;
+      font-family:var(--_ffmono)!important;
+      line-height:1.3!important;
       color:var(--_subtitle3)!important;
       text-wrap:balance;
       text-align:justify;
@@ -732,7 +743,7 @@
 /*--FIRMA 4: ATENEA--*/
 
 /*VARIABLES BASE*/
-.ncatenea {
+.ncatenea, .ncatenea::before, .ncatenea::after, .ncatenea *::before, .ncatenea *::after {
   --_width:var(--w, 250px);
   --_height:var(--h, 220px);
   --_padding:var(--pd, 15px);
@@ -768,7 +779,8 @@
   border-block:var(--_border1);
   isolation:isolate;
   position:relative;
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   place-content:center;
   & br { display:none; }
   & > img {
@@ -810,8 +822,8 @@
     translate:0;
     transition:1s ease 1s;
     & > b {
-      font:2.5em var(--_fftitle);
-      line-height:1;
+      font:2.5em var(--_fftitle)!important;
+      line-height:1!important;
       color:var(--_title1)!important;
       text-transform:uppercase;
       margin-bottom:.15em;
@@ -819,9 +831,11 @@
       margin-left:.15em;
     }
     & > i {
-      font-weight:700;
-      font-style:normal;
-      line-height:1.3em;
+      font-weight:700!important;
+      font-style:normal!important;
+      font-size:var(--_fontsize)!important;
+      font-family:var(--_ffmono)!important;
+      line-height:1.3em!important;
       color:var(--_subtitle1)!important;
       background:color-mix(in srgb, var(--_bckg0), transparent);
       padding:.75em;
@@ -864,14 +878,14 @@
       transform:scaleX(-1) scaleY(-1);
     }
     & > b, & > em {
-      font:1.75em var(--_fftitle);
+      font:1.75em var(--_fftitle)!important;
       text-transform:uppercase;
       color:var(--_title2)!important;
-      line-height:1.3;
+      line-height:1.3!important;
     }
     & > i {
-      font-size:5em;
-      font-style:normal;
+      font-size:5em!important;
+      font-style:normal!important;
       color:var(--_icon1)!important;
       margin-bottom:.3em;
     }
@@ -913,7 +927,7 @@
 /*--FIRMA 5: APOLO--*/
 
 /*VARIABLES BASE*/
-.ncapolo {
+.ncapolo, .ncapolo::before, .ncapolo::after, .ncapolo *, .ncapolo *::before, .ncapolo *::after {
   --_width:var(--w, 300px);
   --_height:var(--h, 220px);
   --_radius:var(--rd, 15px);
@@ -949,7 +963,8 @@
   border:var(--_border);
   isolation:isolate;
   position:relative;
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   border-radius:var(--_radius);
   corner-shape:var(--_radius-shape);
   & br { display:none; }
@@ -998,24 +1013,26 @@
     }
     & > em {
       position:absolute;
-      font-size:calc(var(--_height) * .45);
-      line-height:1;
+      font-size:calc(var(--_height) * .45)!important;
+      line-height:1!important;
       color:var(--_icon1)!important;
       z-index:-1;
       scale:1;
       opacity:1;
     }
     & > b {
-      font:3.5em var(--_fftitle);
+      font:3.5em var(--_fftitle)!important;
       text-transform:capitalize;
-      line-height:1;
+      line-height:1!important;
       color:var(--_title1)!important;
     }
     & > i {
-      font-weight:700;
-      font-style:normal;
+      font-weight:700!important;
+      font-style:normal!important;
+      font-size:var(--_fontsize)!important;
+      font-family:var(--_ffmono)!important;
       text-transform:uppercase;
-      line-height:1;
+      line-height:1.3!important;
       color:var(--_subtitle1)!important;
       text-align:justify;
       text-align-last:center;
@@ -1029,8 +1046,8 @@
     width:fit-content;
     height:fit-content;
     color:var(--_icon2)!important;
-    font-size:clamp(3em, calc(var(--_width) * .15), 10em);
-    line-height:1;
+    font-size:clamp(3em, calc(var(--_width) * .15), 10em)!important;
+    line-height:1!important;
     scale:0;
     transition:ease 1s;
   }
@@ -1045,8 +1062,11 @@
     box-sizing:border-box;
     overflow:hidden;
     text-transform:uppercase;
-    font-weight:700;
-    font-style:normal;
+    font-weight:700!important;
+    font-style:normal!important;
+    font-family:var(--_ffmono)!important;
+    font-size:var(--_fontsize)!important;
+    line-height:1.3!important;
     transition:ease 1s;
   }
   & > i {
@@ -1119,7 +1139,7 @@
 /*--FIRMA 6: ARTEMISA--*/
 
 /*VARIABLES BASE*/
-.ncartemisa {
+.ncartemisa, .ncartemisa::before, .ncartemisa::after, .ncartemisa *, .ncartemisa *::before, .ncartemisa *::after {
   --_width:var(--w, 300px);
   --_height:var(--h, 220px);
   --_radius:var(--rd, 15px);
@@ -1156,7 +1176,8 @@
   border:var(--_border1);
   isolation:isolate;
   position:relative;
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   border-radius:var(--_radius);
   display:flex;
   justify-content:flex-start;
@@ -1246,14 +1267,17 @@
       place-content:center;
       text-align:center;
       color:var(--_icon1)!important;
-      font-size:3em;
+      font-size:3em!important;
+      line-height:1!important;
     }
     & > b {
       text-align:justify;
       text-align-last:center;
       text-transform:uppercase;
-      font-weight:700;
-      line-height:1.4em;
+      font-weight:700!important;
+      font-size:var(--_fontsize)!important;
+      font-family:var(--_ffmono)!important;
+      line-height:1.4em!important;
       color:var(--_subtitle1)!important;
       text-wrap:balance;
     }
@@ -1277,17 +1301,19 @@
       transition:1s ease .5s;
     }
     & > b {
-      font:3em var(--_fftitle);
+      font:3em var(--_fftitle)!important;
       text-transform:lowercase;
-      line-height:.8;
+      line-height:.8!important;
       text-wrap:balance;
       color:var(--_title1)!important;
     }
     & > i {
-      font-weight:700;
-      font-style:normal;
+      font-weight:700!important;
+      font-style:normal!important;
       text-transform:uppercase;
-      line-height:1;
+      line-height:1!important;
+      font-family:var(--_ffmono)!important;
+      font-size:var(--_fontsize)!important;
       color:var(--_subtitle2)!important;
       text-align:justify;
       text-wrap:balance;
@@ -1313,7 +1339,7 @@
 /*--FIRMA 7: ARES--*/
 
 /*VARIABLES BASE*/
-.ncares {
+.ncares, .ncares::before, .ncares::after, .ncares *, .ncares *::before, .ncares *::after {
   --_width:var(--w, 320px);
   --_height:var(--h, 220px);
   --_padding:var(--pd, 15px);
@@ -1350,7 +1376,8 @@
   border:var(--_border1);
   isolation:isolate;
   position:relative;
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   border-radius:var(--_radius) 0 var(--_radius) 0;
   corner-shape:var(--_radius-shape);
   padding:var(--_padding);
@@ -1406,8 +1433,8 @@
   }
   & > div > em {
     position:absolute;
-    font-size:calc(var(--_width) * .6);
-    line-height:1;
+    font-size:calc(var(--_width) * .6)!important;
+    line-height:1!important;
     z-index:-1;
     transition:ease 1s;
     &:first-of-type {
@@ -1428,7 +1455,9 @@
     text-align:justify;
     text-wrap:balance;
     text-transform:uppercase;
-    font-weight:700;
+    font:var(--_fontsize) var(--_ffmono)!important;
+    line-height:1!important;
+    font-weight:700!important;
     transition:ease 1s;
     line-height:1.3em;
     &:first-of-type {
@@ -1459,18 +1488,18 @@
     transition:ease 1s;
     text-transform:uppercase;
     & > i {
-      font:9.5em var(--_fftitle);
-      line-height:.75;
+      font:9.5em var(--_fftitle)!important;
+      line-height:.75!important;
       color:var(--_title1)!important;
     }
     & > b {
-      font:5.5em var(--_fftitle);
-      line-height:.75;
+      font:5.5em var(--_fftitle)!important;
+      line-height:.75!important;
       color:var(--_title2)!important;
     }
     & > em {
-      font:9.5em var(--_fftitle);
-      line-height:.75;
+      font:9.5em var(--_fftitle)!important;
+      line-height:.75!important;
       color:var(--_title3)!important;
     }
   }
@@ -1518,7 +1547,7 @@
 /*--FIRMA 8: AFRODITA--*/
 
 /*VARIABLES BASE*/
-.ncafrodita {
+.ncafrodita, .ncafrodita::before, .ncafrodita::after, .ncafrodita *, .ncafrodita *::before, .ncafrodita *::after {
   --_width:var(--w, 240px);
   --_height:var(--h, 210px);
   --_padding:var(--pd, 15px);
@@ -1554,7 +1583,8 @@
   border:var(--_border1);
   isolation:isolate;
   position:relative;
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   border-radius:var(--_radius) 0 var(--_radius) 0;
   corner-shape:var(--_radius-shape);
   padding:var(--_padding);
@@ -1608,8 +1638,8 @@
     gap:1em;
     transition:ease 1s;
     & > em {
-      font-size:4em;
-      line-height:1;
+      font-size:4em!important;
+      line-height:1!important;
       color:var(--_icon1)!important;
     }
     &::after {
@@ -1641,8 +1671,8 @@
     & > b {
       align-self:flex-start;
       text-align:left;
-      font:7em var(--_fftitle);
-      line-height:.45;
+      font:7em var(--_fftitle)!important;
+      line-height:.45!important;
       color:var(--_title1)!important;
       margin-bottom:.2em;
       & br { display:inline; }
@@ -1654,9 +1684,11 @@
       text-align:justify;
       text-align-last:justify;
       text-transform:uppercase;
-      font-weight:700;
-      letter-spacing:.1em;
-      line-height:1.5em;
+      font:var(--_fontsize) var(--_ffmono)!important;
+      line-height:1!important;
+      font-weight:700!important;
+      letter-spacing:.1em!important;
+      line-height:1.5em!important;
       text-wrap:balance;
       column-fill:balance;
       color:var(--_subtitle1)!important;
@@ -1699,7 +1731,7 @@
 /*--FIRMA 9: HEFESTO--*/
 
 /*VARIABLES BASE*/
-.nchefesto {
+.nchefesto, .nchefesto::before, .nchefesto::after, .nchefesto *, .nchefesto *::before, .nchefesto *::after {
   --_width:var(--w, 340px);
   --_height:var(--h, 180px);
   --_padding:var(--pd, 12px);
@@ -1744,7 +1776,8 @@
   border:var(--_border1-w) solid var(--_border1-c);
   isolation:isolate;
   position:relative;
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   border-radius:var(--_radius);
   corner-shape:var(--_radius-shape);
   padding:var(--_padding);
@@ -1755,8 +1788,10 @@
   background:var(--_bckg0);
   & br { display:none; }
   & > i {
-    font-style:normal;
-    font-weight:700;
+    font:var(--_fontsize) var(--_ffmono)!important;
+    line-height:1!important;
+    font-style:normal!important;
+    font-weight:700!important;
     letter-spacing:.15em;
     background:var(--_bckg0);
     border:var(--_border1-w) solid var(--_border1-c);
@@ -1851,14 +1886,14 @@
       margin:auto;
       width:max-content;
       height:max-content;
-      font:3em var(--_fftitle);
+      font:3em var(--_fftitle)!important;
       padding-inline:1em;
       box-sizing:border-box;
       max-width:100%;
       text-align:center;
       text-wrap:balance;
       color:var(--_title1)!important;
-      line-height:1;
+      line-height:1!important;
     }
   }
   & > div > span {
@@ -1889,17 +1924,18 @@
       filter:var(--_filter3);
     }
     & > em {
-      font-size:3em;
+      font-size:3em!important;
       color:var(--_icon1)!important;
-      line-height:1;
+      line-height:1!important;
     }
     & > b {
-      font-weight:700;
+      font-weight:700!important;
       color:var(--_subtitle1)!important;
-      line-height:1.3;
+      line-height:1.3!important;
       text-align:justify;
       text-align-last:center;
-      font-size:.85em;
+      font-size:.85em!important;
+      font-family:var(--_ffmono)!important;
       text-transform:uppercase;
       text-wrap:balance;
     }
@@ -1933,7 +1969,7 @@
 /*--FIRMA 10: HERMES--*/
 
 /*VARIABLES BASE*/
-.nchermes {
+.nchermes, .nchermes::before, .nchermes::after, .nchermes *, .nchermes *::before, .nchermes *::after {
   --_width:var(--w, 300px);
   --_height:var(--h, 200px);
   --_padding:var(--pd, 8px);
@@ -1971,7 +2007,8 @@
   border-block:var(--_border1-w) solid var(--_border1-c);
   isolation:isolate;
   position:relative;
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   padding:var(--_padding);
   background:var(--_bckg0);
   & br { display:none; }
@@ -2046,9 +2083,9 @@
     align-items:center;
     gap:.5em;
     & > em {
-      font-size:3em;
+      font-size:3em!important;
       color:var(--_icon1)!important;
-      line-height:1;
+      line-height:1!important;
     }
     & > i {
       border-top:var(--_border1-w) solid var(--_border1-c);
@@ -2057,12 +2094,14 @@
       text-align:right;
       transition:.5s ease .5s;
       color:var(--_title1)!important;
+      font:700 var(--_fontsize) var(--_ffmono)!important;
+      line-height:1!important;
       & > b {
         position:absolute;
         top:100%;
         right:0;
         margin-top:.5em;
-        font-style:normal;
+        font:inherit!important;
         text-transform:uppercase;
         white-space:pre;
         color:inherit!important;
@@ -2079,14 +2118,14 @@
     margin:0;
     & > b {
       margin-right:auto;
-      font:700 3.5em var(--_fftitle);
+      font:700 3.5em var(--_fftitle)!important;
       text-transform:uppercase;
       color:var(--_title2)!important;
       display:flex;
       align-items:flex-start;
       justify-content:flex-end;
       flex-direction:column;
-      line-height:1;
+      line-height:1!important;
       & > * {
         font:inherit;
         color:inherit;
@@ -2101,15 +2140,18 @@
       justify-content:flex-end;
       gap:1em;
       & > i {
-        font-weight:700;
+        font:var(--_fontsize) var(--_ffmono)!important;
+        line-height:1!important;
+        font-weight:700!important;
         text-transform:uppercase;
-        font-style:normal;
+        font-style:normal!important;
         flex-grow:1;
         text-align:justify;
         text-wrap:balance;
       }
       & > em {
-        font-size:5em;
+        font-size:5em!important;
+        line-height:1!important;
         color:var(--_icon2)!important;
       }
     }
@@ -2134,7 +2176,7 @@
 /*--FIRMA 11: DIONISIO--*/
 
 /*VARIABLES BASE*/
-.ncdionisio {
+.ncdionisio, .ncdionisio::before, .ncdionisio::after, .ncdionisio *, .ncdionisio *::before, .ncdionisio *::after {
   --_width:var(--w, 300px);
   --_height:var(--h, 200px);
   --_padding:var(--pd, 8px);
@@ -2182,7 +2224,8 @@
   border:var(--_border1);
   isolation:isolate;
   position:relative;
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   padding:var(--_padding);
   background:var(--_bckg0);
   transition:ease 1s;
@@ -2270,19 +2313,19 @@
       transition:1s ease .5s;
     }
     & > em {
-      font-size:3em;
+      font-size:3em!important;
       color:var(--_icon1)!important;
-      line-height:1;
+      line-height:1!important;
       border-right:var(--_border3);
       margin-right:.5em;
       padding:.25em .5em;
     }
     & > b {
       place-content:center;
-      font:2.25em var(--_fftitle);
+      font:2.25em var(--_fftitle)!important;
       text-transform:lowercase;
       text-wrap:balance;
-      line-height:.8;
+      line-height:.8!important;
       color:var(--_title1)!important;
     }
   }
@@ -2324,16 +2367,18 @@
         border:var(--_border3);
       }
       & > b {
+        font:var(--_fontsize) var(--_ffmono)!important;
+        line-height:1!important;
         text-align:justify;
         text-align-last:center;
         text-transform:uppercase;
-        font-weight:700;
+        font-weight:700!important;
         color:var(--_subtitle2)!important;
       }
       & > i {
         color:var(--_icon2)!important;
-        font-size:2.5em;
-        line-height:1;
+        font-size:2.5em!important;
+        line-height:1!important;
       }
     }
     & > span {
@@ -2354,8 +2399,10 @@
       text-wrap:balance;
       text-align:justify;
       text-align-last:right;
+      font:var(--_fontsize) var(--_ffmono)!important;
+      line-height:1!important;
       color:var(--_subtitle1)!important;
-      line-height:1.3em;
+      line-height:1.3em!important;
       top:100%;
       transition-delay:0s;
     }
@@ -2391,7 +2438,7 @@
 /*--FIRMA 12: HESTIA--*/
 
 /*VARIABLES BASE*/
-.nchestia {
+.nchestia, .nchestia::before, .nchestia::after, .nchestia *, .nchestia *::before, .nchestia *::after {
   --_width:var(--w, 220px);
   --_height:var(--h, 220px);
   --_padding:var(--pd, 5px);
@@ -2443,7 +2490,8 @@
   border:var(--_border1);
   isolation:isolate;
   position:relative;
-  font:var(--_fontsize) var(--_ffmono);
+  font:var(--_fontsize) var(--_ffmono)!important;
+  line-height:1!important;
   padding:var(--_padding);
   background:var(--_bckg0);
   transition:--_separation1 1s ease, --_separation2 1s ease;
@@ -2519,7 +2567,8 @@
     box-sizing:border-box;
     z-index:2;
     transition:ease .5s;
-    font-size:3em;
+    font-size:3em!important;
+    line-height:1!important;
     place-content:flex-end;
     padding:5%;
     box-sizing:border-box;
@@ -2560,21 +2609,22 @@
       color:var(--_icon2)!important;
     }
     & > b {
-      font:4.5em var(--_fftitle);
-      line-height:.7;
+      font:4.5em var(--_fftitle)!important;
+      line-height:.7!important;
       text-transform:lowercase;
       word-spacing:99em;
       color:var(--_title1)!important;
     }
     & > i {
       text-align:justify;
-      font-weight:700;
-      font-style:normal;
       text-transform:uppercase;
       color:var(--_subtitle1)!important;
       text-align-last:left;
       text-wrap:balance;
-      line-height:1.3em;
+      font:var(--_fontsize) var(--_ffmono)!important;
+      font-weight:700!important;
+      font-style:normal!important;
+      line-height:1.3em!important;
     }
   }
   &:hover {
