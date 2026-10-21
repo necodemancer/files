@@ -32,6 +32,7 @@
 
 /*DISEÑO*/
 .nczeus {
+  text-align:left;
   width:var(--_width);
   height:var(--_height);
   margin:0 auto;
@@ -252,6 +253,7 @@
 }
 .nchera {
   --_rotate:45deg;
+  text-align:left;
   margin:0 auto;
   transition:--_rotate 3s ease;
   display:flex;
@@ -442,6 +444,7 @@
 /*DISEÑO*/
 .ncposeidon {
   margin:0 auto;
+  text-align:left;
   width:var(--_width);
   height:var(--_height);
   padding:var(--_padding);
@@ -754,6 +757,7 @@
 /*DISEÑO*/
 .ncatenea {
   margin:0 auto;
+  text-align:left;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -934,6 +938,7 @@
 /*DISEÑO*/
 .ncapolo {
   margin:0 auto;
+  text-align:left;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -1140,6 +1145,7 @@
 /*DISEÑO*/
 .ncartemisa {
   margin:0 auto;
+  text-align:left;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -1333,6 +1339,7 @@
 /*DISEÑO*/
 .ncares {
   margin:0 auto;
+  text-align:left;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -1536,6 +1543,7 @@
 /*DISEÑO*/
 .ncafrodita {
   margin:0 auto;
+  text-align:left;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -1726,6 +1734,7 @@
 /*DISEÑO*/
 .nchefesto {
   margin:0 auto;
+  text-align:left;
   width:var(--_width);
   height:var(--_height);
   border:var(--_border1-w) solid var(--_border1-c);
@@ -1951,6 +1960,7 @@
 
 /*DISEÑO*/
 .nchermes {
+  text-align:left;
   margin:0 auto;
   width:var(--_width);
   height:var(--_height);
@@ -2161,6 +2171,7 @@
 
 /*DISEÑO*/
 .ncdionisio {
+  text-align:left;
   margin:0 auto;
   width:var(--_width);
   height:var(--_height);
@@ -2421,6 +2432,7 @@
 .nchestia {
   --_separation1:3em;
   --_separation2:calc(100% - 3em);
+  text-align:left;
   margin:0 auto;
   width:var(--_width);
   height:var(--_height);
