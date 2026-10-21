@@ -252,6 +252,7 @@
 }
 .nchera {
   --_rotate:45deg;
+  margin:0 auto;
   transition:--_rotate 3s ease;
   display:flex;
   justify-content:flex-end;
@@ -440,6 +441,7 @@
 
 /*DISEÑO*/
 .ncposeidon {
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   padding:var(--_padding);
@@ -751,6 +753,7 @@
 
 /*DISEÑO*/
 .ncatenea {
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -930,6 +933,7 @@
 
 /*DISEÑO*/
 .ncapolo {
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -1135,6 +1139,7 @@
 
 /*DISEÑO*/
 .ncartemisa {
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -1327,6 +1332,7 @@
 
 /*DISEÑO*/
 .ncares {
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -1529,6 +1535,7 @@
 
 /*DISEÑO*/
 .ncafrodita {
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   overflow:hidden;
@@ -1718,6 +1725,7 @@
 
 /*DISEÑO*/
 .nchefesto {
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   border:var(--_border1-w) solid var(--_border1-c);
@@ -1943,6 +1951,7 @@
 
 /*DISEÑO*/
 .nchermes {
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   border-block:var(--_border1-w) solid var(--_border1-c);
@@ -2152,6 +2161,7 @@
 
 /*DISEÑO*/
 .ncdionisio {
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   border:var(--_border1);
@@ -2411,6 +2421,7 @@
 .nchestia {
   --_separation1:3em;
   --_separation2:calc(100% - 3em);
+  margin:0 auto;
   width:var(--_width);
   height:var(--_height);
   border:var(--_border1);
@@ -2564,5 +2575,3 @@
     }
   }
 }
-
-/*--FIRMA 12: HESTIA--*/
