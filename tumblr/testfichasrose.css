@@ -1,7 +1,7 @@
 /*--FIRMA 1: ZEUS--*/
 
 /*VARIABLES BASE*/
-.nczeus {
+.nczeus, .nczeus::before, .nczeus::after, .nczeus *, .nczeus *::before, .nczeus *::after {
   --_width:var(--w, 300px);
   --_height:var(--h, 180px);
   --_border:var(--brd, 1px solid #222);
@@ -42,8 +42,9 @@
   isolation:isolate;
   background:var(--_bckg0);
   border:var(--_padding) solid var(--_bckg0);
-  font:var(--_fontsize) var(--_ffsubtitle);
+  font:var(--_fontsize) var(--_ffsubtitle)!important;
   transition:ease 2s;
+  line-height:1!important;
   & br {
     display:none;
   }
@@ -88,7 +89,7 @@
     position:absolute;
     bottom:0;
     left:0;
-    font-size:5em;
+    font-size:5em!important;
     line-height:1;
     height:1.5em;
     aspect-ratio:1;
@@ -120,24 +121,26 @@
     right:unset;
     top:unset;
     & > em {
-      font-size:4em;
-      line-height:1;
+      font-size:4em!important;
+      line-height:1!important;
       margin-bottom:.5em;
       color:var(--_icon1)!important;
     }
     & > b {
-      font:3em var(--_fftitle);
-      line-height:1;
+      font:3em var(--_fftitle)!important;
+      line-height:1!important;
       color:var(--_title1)!important;
       letter-spacing:-.025em;
       text-wrap:balance;
     }
     & > i {
       margin-top:.3em;
-      font-weight:700;
-      font-style:normal;
+      font-size:1em!important;
+      font-family:var(--_ffmono)!important;
+      font-weight:700!important;
+      font-style:normal!important;
       text-transform:uppercase;
-      line-height:1;
+      line-height:1!important;
       color:var(--_subtitle1)!important;
       text-align:justify;
       text-align-last:left;
@@ -166,24 +169,25 @@
     top:0;
     right:-100%;
     & > b {
-      font:3em var(--_fftitle);
-      line-height:1;
+      font:3em var(--_fftitle)!important;
+      line-height:1!important;
       color:var(--_title2)!important;
       letter-spacing:-.025em;
       text-wrap:balance;
     }
     & > i {
       margin-top:.3em;
-      font-weight:700;
-      font-style:normal;
+      font-size:1em!important;
+      font-family:var(--_ffmono)!important;
+      font-weight:700!important;
+      font-style:normal!important;
       text-transform:uppercase;
-      line-height:1;
+      line-height:1!important;
       color:var(--_subtitle2)!important;
       text-align:justify;
       text-align-last:right;
       text-wrap:balance;
     }
-    
   }
   &:hover {
     & > u {
