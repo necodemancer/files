@@ -136,7 +136,7 @@
     & > i {
       margin-top:.3em;
       font-size:1em!important;
-      font-family:var(--_ffmono)!important;
+      font-family:var(--_ffsubtitle)!important;
       font-weight:700!important;
       font-style:normal!important;
       text-transform:uppercase;
@@ -178,7 +178,7 @@
     & > i {
       margin-top:.3em;
       font-size:1em!important;
-      font-family:var(--_ffmono)!important;
+      font-family:var(--_ffsubtitle)!important;
       font-weight:700!important;
       font-style:normal!important;
       text-transform:uppercase;
